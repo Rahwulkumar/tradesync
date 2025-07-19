@@ -1,0 +1,37 @@
+{
+  "name": "trading-journal",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "cd frontend && npm run dev",
+    "build": "cd frontend && npm run build",
+    "lint": "cd frontend && npm run lint",
+    "preview": "cd frontend && npm run preview",
+    "install-all": "npm install && cd frontend && npm install && cd ../backend && pip install -r requirements.txt",
+    "start-backend": "cd backend && python main.py",
+    "start": "concurrently \"npm run start-backend\" \"npm run dev\""
+  },
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/material": "^7.1.1",
+    "@mui/x-charts": "^8.5.1",
+    "@tabler/icons-react": "^3.34.0",
+    "chart.js": "^4.4.9",
+    "framer-motion": "^12.16.0",
+    "jspdf": "^3.0.1",
+    "lightweight-charts": "^4.2.3",
+    "lucide-react": "^0.523.0",
+    "react": "^18.3.1",
+    "react-chartjs-2": "^5.3.0",
+    "react-dom": "^18.3.1",
+    "react-hot-toast": "^2.5.2",
+    "react-spring": "^10.0.1",
+    "recharts": "^2.15.4"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.6.0",
+    "concurrently": "^8.2.2"
+  }
+}
